@@ -11,7 +11,8 @@
     "cy:run:smoke": "cypress run --spec \"cypress/e2e/smoke/*.cy.js\"",
     "report:merge": "npx mochawesome-merge \"cypress/reports/mochawesome*.json\" > cypress/reports/final-report.json",
     "report:generate": "npx marge cypress/reports/final-report.json -f final-report -o cypress/reports",
-    "report:open": "start cypress\\reports\\final-report.html",
+    "report:open:mac": "open cypress/reports/final-report.html",
+    "report:open:win": "start cypress\\reports\\final-report.html",
     "test": "npm run cy:run"
   },
   "repository": {
